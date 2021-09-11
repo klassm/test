@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: test cli
         run: |
-          gh auth status
+          /usr/local/bin/gh auth status
           gh --help
