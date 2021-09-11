@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test cli
-        run: gh --help
+        run: |
+          gh auth status
+          gh --help
